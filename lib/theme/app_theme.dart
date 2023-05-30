@@ -12,7 +12,11 @@ class AppTheme {
     ),
     // Button Theme Light
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(primary: primaryColor),
+      style: TextButton.styleFrom(
+        textStyle: TextStyle(
+          color: primaryColor,
+        ),
+      ),
     ),
     // FloatingActionButton Theme Light
     floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -56,7 +60,7 @@ class AppTheme {
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
     primaryColor: primaryColor,
     appBarTheme: AppBarTheme(
-      color: primaryColor,
+      color: Colors.red,
       elevation: 1,
     ),
   );

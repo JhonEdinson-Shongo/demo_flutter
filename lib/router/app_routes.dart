@@ -79,6 +79,12 @@ class AppRoutes {
       screen: PainterScreen(),
       icon: Icons.format_paint_outlined,
     ),
+    MenuOption(
+      route: 'responsive',
+      name: 'Responsive',
+      screen: ResponsiveScreen(),
+      icon: Icons.screen_rotation,
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
